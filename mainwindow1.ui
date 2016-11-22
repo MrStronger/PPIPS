@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow1</class>
+ <widget class="QMainWindow" name="MainWindow1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>891</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>891</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 143, 214);
+border-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>889</width>
+       <height>89</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>640</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>35</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QToolButton" name="toolBtnhelp_1">
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft JhengHei</family>
+           <pointsize>10</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::DefaultContextMenu</enum>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QToolButton{
+font: 75 10pt &quot;Microsoft JhengHei&quot;;
+color: rgb(255, 255, 255);
+padding: 7px 7px;
+ border: 1px ;
+ 
+}
+QToolButton:hover{
+background-color: rgb(61, 165, 252);
+padding: 5px 5px;
+ border: 1px ;
+
+}
+
+QToolButton:checked{
+background-color: rgb(61, 165, 252);
+
+}</string>
+         </property>
+         <property name="text">
+          <string>灰度与滤波</string>
+         </property>
+         <property name="icon">
+          <iconset resource="menu.qrc">
+           <normaloff>:/images/104.jpg</normaloff>:/images/104.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>76</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="autoRepeatDelay">
+          <number>300</number>
+         </property>
+         <property name="autoRepeatInterval">
+          <number>100</number>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::DelayedPopup</enum>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+         <property name="arrowType">
+          <enum>Qt::NoArrow</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolBtnhelp_2">
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::ClickFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QToolButton{
+font: 75 10pt &quot;Microsoft JhengHei&quot;;
+color: rgb(255, 255, 255);
+padding: 7px 7px;
+ border: 1px ;
+ 
+}
+QToolButton:hover{
+background-color: rgb(61, 165, 252);
+padding: 5px 5px;
+ border: 1px ;
+
+}
+
+QToolButton:checked{
+background-color: rgb(61, 165, 252);
+
+}</string>
+         </property>
+         <property name="text">
+          <string>彩色图像处理</string>
+         </property>
+         <property name="icon">
+          <iconset resource="menu.qrc">
+           <normaloff>:/images/108.png</normaloff>:/images/108.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>76</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolBtnhelp_3">
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QToolButton{
+font: 75 10pt &quot;Microsoft JhengHei&quot;;
+color: rgb(255, 255, 255);
+padding: 7px 7px;
+ border: 1px ;
+ 
+}
+QToolButton:hover{
+background-color: rgb(61, 165, 252);
+padding: 5px 5px;
+ border: 1px ;
+
+}
+
+QToolButton:checked{
+background-color: rgb(61, 165, 252);
+
+}</string>
+         </property>
+         <property name="text">
+          <string>直方图绘制</string>
+         </property>
+         <property name="icon">
+          <iconset resource="menu.qrc">
+           <normaloff>:/images/109 (1).jpg</normaloff>:/images/109 (1).jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>76</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolBtnhelp_4">
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QToolButton{
+font: 75 10pt &quot;Microsoft JhengHei&quot;;
+color: rgb(255, 255, 255);
+padding: 7px 7px;
+ border: 1px ;
+ 
+}
+QToolButton:hover{
+background-color: rgb(61, 165, 252);
+padding: 5px 5px;
+ border: 1px ;
+
+}
+
+QToolButton:checked{
+background-color: rgb(61, 165, 252);
+
+}</string>
+         </property>
+         <property name="text">
+          <string>边缘检测</string>
+         </property>
+         <property name="icon">
+          <iconset resource="menu.qrc">
+           <normaloff>:/images/118.jpg</normaloff>:/images/118.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>76</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolBtnhelp_5">
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QToolButton{
+font: 75 10pt &quot;Microsoft JhengHei&quot;;
+color: rgb(255, 255, 255);
+padding: 7px 7px;
+ border: 1px ;
+ 
+}
+QToolButton:hover{
+background-color: rgb(61, 165, 252);
+padding: 5px 5px;
+ border: 1px ;
+
+}
+
+QToolButton:checked{
+background-color: rgb(61, 165, 252);
+
+}</string>
+         </property>
+         <property name="text">
+          <string>滤镜</string>
+         </property>
+         <property name="icon">
+          <iconset resource="menu.qrc">
+           <normaloff>:/images/106.jpg</normaloff>:/images/106.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>76</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolBtnhelp_6">
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTipDuration">
+          <number>-1</number>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QToolButton{
+font: 75 10pt &quot;Microsoft JhengHei&quot;;
+color: rgb(255, 255, 255);
+padding: 7px 7px;
+ border: 1px ;
+ 
+}
+QToolButton:hover{
+background-color: rgb(61, 165, 252);
+padding: 5px 5px;
+ border: 1px ;
+
+}
+
+QToolButton:checked{
+background-color: rgb(61, 165, 252);
+
+}</string>
+         </property>
+         <property name="text">
+          <string>面部识别追踪</string>
+         </property>
+         <property name="icon">
+          <iconset resource="menu.qrc">
+           <normaloff>:/images/116.png</normaloff>:/images/116.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>76</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushBtnmin_h">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>7</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border-image: url(:/images/最小化 (6).png);
+}
+QPushButton:hover{
+background-color: rgb(61, 165, 252);
+color: rgb(255, 255, 255);
+padding: 1px 1px; 
+border-radius:1px;
+
+}
+</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushBtnmax_h">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton{
+border-image: url(:/images/关闭 (2).png);
+}
+QPushButton:hover{
+
+	background-color: rgb(255, 0, 0);
+
+color: rgb(255, 255, 255);
+padding: 1px 1px; 
+border-radius:1px;
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>5</y>
+        <width>78</width>
+        <height>78</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/images/帮助 (5).png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>784</x>
+        <y>40</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/images/QQ截图20160429180928.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>891</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>871</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>12</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;Consolas&quot;;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Consolas'; font-size:12pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="cursorWidth">
+       <number>1</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QTextBrowser" name="textBrowser_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>871</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#55ff00;&quot;&gt;彩&lt;/span&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ff5500;&quot;&gt;色&lt;/span&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ff0000;&quot;&gt;图&lt;/span&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#c3c361;&quot;&gt;像&lt;/span&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#555500;&quot;&gt;处&lt;/span&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#5555ff;&quot;&gt;理&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#5555ff;&quot;&gt;腐蚀与膨胀&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'helvetica,arial,freesans,clean,sans-serif'; font-size:18px; color:#333333; background-color:#f8f8f8;&quot;&gt;腐蚀操作描述为：扫描图像的每一个像素，用结构元素与其覆盖的二值图像做“与”操作：如果都为1，结果图像的该像素为1，否则为0。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:21px; margin-bottom:21px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;&quot;&gt;&lt;span style=&quot; font-family:'helvetica,arial,freesans,clean,sans-serif'; font-size:18px; color:#333333; background-color:#f8f8f8;&quot;&gt;膨胀操作描述为：扫描图像的每一个像素，用结构元素与其覆盖的二值图像做“与”操作：如果都为0，结果图像的该像素为0，否则为1。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:21px; margin-bottom:21px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;&quot;&gt;&lt;span style=&quot; font-family:'helvetica,arial,freesans,clean,sans-serif'; font-size:18px; color:#333333; background-color:#f8f8f8;&quot;&gt;以上都是关于二值图像的形态学操作，对于灰度图像：&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'helvetica,arial,freesans,clean,sans-serif'; font-size:18px; color:#333333;&quot; style=&quot; margin-top:21px; margin-bottom:12px; margin-left:42px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18px;&quot;&gt;腐蚀操作&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:21px; margin-bottom:12px; margin-left:42px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160425223919.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:21px; margin-bottom:12px; margin-left:42px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'helvetica,arial,freesans,clean,sans-serif'; font-size:18px; color:#333333; background-color:#f8f8f8;&quot;&gt;其中，g(x,y)为腐蚀后的灰度图像，f(x,y)为原灰度图像，B为结构元素。腐蚀运算是由结构元素确定的邻域块中选取图像值与结构元素值的差的最小值。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:21px; margin-bottom:12px; margin-left:42px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'helvetica,arial,freesans,clean,sans-serif'; font-size:18px; color:#333333; background-color:#f8f8f8;&quot;&gt;      2.膨胀操作&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:21px; margin-bottom:12px; margin-left:42px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160425223934.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:21px; margin-bottom:12px; margin-left:42px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'helvetica,arial,freesans,clean,sans-serif'; font-size:18px; color:#333333; background-color:#f8f8f8;&quot;&gt;其中，g(x,y)为腐蚀后的灰度图像，f(x,y)为原灰度图像，B为结构元素。 膨胀运算是由结构元素确定的邻域块中选取图像值与结构元素值的和的最大值。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:21px; margin-bottom:12px; margin-left:42px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'helvetica,arial,freesans,clean,sans-serif'; font-size:18px; color:#333333; background-color:#f8f8f8;&quot;&gt;opencv中的腐蚀操作：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:22px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt;   CVAPI(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#0000ff;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt;)  cvErode( &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#0000ff;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt; CvArr* src,CvArr*dst,IplConvKernel* element CV_DEFAULT(NULL),&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#0000ff;&quot;&gt;int &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt;iterations CV_DEFAULT(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#800080;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt;) );&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:22px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Verdana,Lucida Grande,Arial,Helvetica,sans-serif'; font-size:12px; color:#000000; background-color:#ffffff;&quot;&gt;前两个参数比较熟悉，第三个参数是用于传递模板的信息，默认是（NULL），即为3*3的模板，第四个参数是迭代的次数（即该腐蚀操作做几次）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Verdana,Lucida Grande,Arial,Helvetica,sans-serif'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;opencv中的膨胀操作其实就是腐蚀的反操作：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt;CVAPI(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#0000ff;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt;)  cvDilate( &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#0000ff;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt; CvArr* src, CvArr* dst,IplConvKernel*element,CV_DEFAULT(NULL),&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:22px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#0000ff;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt; iterations CV_DEFAULT(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#800080;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt;) );&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:22px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; font-family:'Courier New'; font-size:12px; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:22px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:18pt; font-weight:600; color:#55557f;&quot;&gt;亮度与对比度&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:22px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; font-family:'Courier New'; font-size:18pt; font-weight:600; color:#55557f;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:22px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; font-weight:600; color:#333333;&quot;&gt;基本原理：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;图像亮度本质上图像中每个像素的亮度，每个像素的亮度本质上RGB值的大小，RGB值为0&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;是像素点为黑色，RGB都为255时像素点最亮，为白色。对比度则是不同像素点之间的差值，&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;差值越大，对比度越明显。从直方图分析的观点来看，对比度越好的图片，直方图曲线会越&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;明显，分布也越显得均匀。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; font-weight:600; color:#333333;&quot;&gt;算法流程：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;调整图像亮度与对比度算法主要由以下几个步骤组成：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;1.      计算图像的RGB像素均值– M&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;2.      对图像的每个像素点Remove平均值-M&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;3.      对去掉平均值以后的像素点 P乘以对比度系数&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;4.      对步骤上处理以后的像素P加上 M乘以亮度系统&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;5.      对像素点RGB值完成重新赋值&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; font-weight:600; color:#333333;&quot;&gt;算法系数&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;对比度 contrast的最佳取值范围在[0 ~ 4],&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;亮度 brightness的最佳取值范围在[0~ 2]之间&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#55aa00; background-color:#ffffff;&quot;&gt;图像旋转和缩放&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000; background-color:#ffffff;&quot;&gt;利用Qt里特有的图像处理函数：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#55aaff; background-color:#ffffff;&quot;&gt;图像旋转&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#000000; background-color:#ffffff;&quot;&gt;：函数原型：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-size:12pt; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-size:12pt; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-size:12pt; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-size:12pt; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-size:12pt; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160425230850.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#55aaff; background-color:#ffffff;&quot;&gt;图像缩放&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#000000; background-color:#ffffff;&quot;&gt;：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-size:12pt; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160425230922.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-size:20pt; color:#1f5d5d;&quot;&gt;图像减色&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'microsoft yahei'; font-size:14px; color:#000000; background-color:#ffffff;&quot;&gt;彩色图像由三通道像素组成，每个通道表示红、绿、蓝三原色中一种颜色的亮度值，每个数值都是 8 位的无符号字符类型（uchar），因此颜色总数（number of colors，而是像素总数）为 ：&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:20px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;MathJax-Element-173-Frame&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;56&lt;/span&gt;&lt;a name=&quot;MathJax-Span-4&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;×&lt;/span&gt;&lt;a name=&quot;MathJax-Span-5&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;56&lt;/span&gt;&lt;a name=&quot;MathJax-Span-6&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;×&lt;/span&gt;&lt;a name=&quot;MathJax-Span-7&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;56&lt;/span&gt;&lt;a name=&quot;MathJax-Span-8&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;a name=&quot;MathJax-Span-9&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;2&lt;/span&gt;&lt;a name=&quot;MathJax-Span-11&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:12px; color:#000000;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:12px; color:#000000;&quot;&gt;4&lt;/span&gt;&lt;a name=&quot;MathJax-Span-14&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;a name=&quot;MathJax-Span-15&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;6777216&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:22px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'microsoft yahei'; font-size:14px; color:#000000; background-color:#ffffff;&quot;&gt;超过 1600 万种颜色，因此为了降低分析的复杂性，有时需要减少图像中颜色的数量，一种实现方法是把 RGB 空间细分到大小相等的方块中。例如，如果把每种颜色数量减少到 1/8，那么颜色总数就变为&lt;/span&gt;&lt;span style=&quot; font-family:'microsoft yahei'; font-size:14px; color:#000000;&quot;&gt; &lt;/span&gt;&lt;a name=&quot;MathJax-Element-174-Frame&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;2&lt;/span&gt;&lt;a name=&quot;MathJax-Span-19&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;×&lt;/span&gt;&lt;a name=&quot;MathJax-Span-20&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;2&lt;/span&gt;&lt;a name=&quot;MathJax-Span-21&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;×&lt;/span&gt;&lt;a name=&quot;MathJax-Span-22&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'microsoft yahei'; font-size:14px; color:#000000;&quot;&gt;。将旧图像中的每一个颜色值划分成一个方块，并将该方块的中间值作为新的颜色值。新图像使用新的颜色值，颜色数就减少了： &lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:20px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;MathJax-Element-175-Frame&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Math'; font-size:18px; font-style:italic; color:#000000;&quot;&gt;n&lt;/span&gt;&lt;a name=&quot;MathJax-Span-26&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Math'; font-size:18px; font-style:italic; color:#000000;&quot;&gt;e&lt;/span&gt;&lt;a name=&quot;MathJax-Span-27&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Math'; font-size:18px; font-style:italic; color:#000000;&quot;&gt;w&lt;/span&gt;&lt;a name=&quot;MathJax-Span-28&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;a name=&quot;MathJax-Span-29&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Math'; font-size:18px; font-style:italic; color:#000000;&quot;&gt;o&lt;/span&gt;&lt;a name=&quot;MathJax-Span-30&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Math'; font-size:18px; font-style:italic; color:#000000;&quot;&gt;l&lt;/span&gt;&lt;a name=&quot;MathJax-Span-31&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Math'; font-size:18px; font-style:italic; color:#000000;&quot;&gt;d&lt;/span&gt;&lt;a name=&quot;MathJax-Span-32&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;/&lt;/span&gt;&lt;a name=&quot;MathJax-Span-35&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;/&lt;/span&gt;&lt;a name=&quot;MathJax-Span-38&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Math'; font-size:18px; font-style:italic; color:#000000;&quot;&gt;N&lt;/span&gt;&lt;a name=&quot;MathJax-Span-39&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;×&lt;/span&gt;&lt;a name=&quot;MathJax-Span-40&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Math'; font-size:18px; font-style:italic; color:#000000;&quot;&gt;N&lt;/span&gt;&lt;a name=&quot;MathJax-Span-41&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;+&lt;/span&gt;&lt;a name=&quot;MathJax-Span-42&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Math'; font-size:18px; font-style:italic; color:#000000;&quot;&gt;N&lt;/span&gt;&lt;a name=&quot;MathJax-Span-43&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;/&lt;/span&gt;&lt;a name=&quot;MathJax-Span-46&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MathJax_Main'; font-size:18px; color:#000000;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:20px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'MathJax_Main'; font-size:18px; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:20px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'MathJax_Main'; font-size:18px; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:20px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'MathJax_Main'; font-size:18px; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:20px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'MathJax_Main'; font-size:18px; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:20px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'MathJax_Main'; font-size:18px; color:#000000; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:20px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160425232154.png&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>871</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_3">
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;直方图绘制&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体'; font-size:24pt; color:#5500ff;&quot;&gt;直方图的意义：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt;&quot;&gt;①直方图是图像中像素强度分布的图形表达方式。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt;&quot;&gt;②它统计了每一个强度值所具有的像素个数。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:large; font-weight:600; color:#333333; background-color:#ffffff;&quot;&gt;灰度直方图的定义&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;灰度直方图是灰度级的函数，描述图像中该灰度级的像素个数（或该灰度级像素出现的频率）：其横坐标是灰度级，纵坐标表示图像中该灰度级出现的个数（频率）。&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;一维直方图的结构表示为&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160429124948.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;高维直方图可以理解为图像在每个维度上灰度级分布的直方图。常见的是二维直方图。如红-蓝直方图的两个分量分别表示红光图像的灰度值和蓝光图像灰度值的函数。其图像坐标（Dr,Db）处对应在红光图像中具有灰度级Dr同时在蓝光图像中具有灰度级Db的像素个数。这是基于多光谱——每个像素有多个变量——的数字图像，二维中对应每个像素统计个变量。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:large; font-weight:600; color:#333333; background-color:#ffffff;&quot;&gt;OpenCV中的直方图CvHistogram&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;注意我们在上面理解直方图的意义时更多把他想象成一幅&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; font-weight:600; color:#333333;&quot;&gt;“图”&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333;&quot;&gt;，继而理解图中横坐标，纵坐标的意义。而在OpenCV中，应该更多把直方图看做&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; font-weight:600; color:#333333;&quot;&gt;“数据结构”&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333;&quot;&gt;来理解。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;OpenCV中用CvHistogram表示多维直方图&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160429125216.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;第一个成员type用来指定第二个成员bins的类型。OpenCv中常见到CvArr*的接口，可以用以指定诸如CvMat、CvMatND、IplImage的类型，其实CvArr*的是一个指向void的指针。在函数内部有时需要得到确切的指向类型，这就需要type来指定。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;thresh用来指定统计直方图分布的上下界。比如[0 255]表示用来统计图像中像素分别在灰度级[0 255]区间的分布情况，CV_MAX_DIM对应直方图的维数，假如设定二维红-蓝直方图的thresh为[0 255;100 200]，就是分别统计红色图像灰度级在[0 255]以及蓝色图像在灰度级[100 200]的分布情况。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;thresh用以指定均匀直方图的分布，我们按每个像素理解自然是“均匀分布”，其实也可以统计像素在几个区间的分布。如果统计像素在2个区间的分布，则对应[0 255]的上下界，均匀分布统计的区间即[0 127] [127 255]分布的概率，这也是为什么thresh第二个维数默认为2——会自动均分上下界；而thresh2指定非均匀的分布，这就需要指定每个区间的上下界，如果要统计直方图在区间（0，10,100,255）的分布，那需要指定thresh2的一个维度为[0 10 100 255]，所以用float**形式表示。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;mat简单说就是存储了直方图的信息，即我们统计的直方图分布概率。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:large; font-weight:600; color:#333333; background-color:#ffffff;&quot;&gt;创建直方图 cvCreateHist()&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;OpenCV中用cvCreateHist()创建一个直方图：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160429125351.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;size数组的长度为dims，每个数表示分配给对应维数的bin的个数。如dims=3，则size中用[s1,s2,s3]分别指定每维bin的个数。&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333;&quot;&gt;&lt;br /&gt;type有两种：CV_HIST_ARRAY 意味着直方图数据表示为多维密集数组 CvMatND; CV_HIST_TREE 意味着直方图数据表示为多维稀疏数组 CvSparseMat。&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;ranges就是那个复杂的不好理解的thresh的范围，他的内容取决于uniform的值。uniform为0是均匀的，非0时不均匀。&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;计算图像直方图的函数为CalcHist()：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160429125412.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;要注意的是这个函数用来计算一张（或多张）&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; font-weight:600; color:#333333; background-color:#ffffff;&quot;&gt;单通道&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;图像的直方图，如果要计算多通道，则用这个函数分别计算图像每个单通道。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'arial,tahoma,Microsoft Yahei,宋体,sans-serif'; font-size:18pt; color:#333333; background-color:#ffffff;&quot;&gt;直方图均衡化&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;如果一副图像的像素占有很多的灰度级而且分布均匀，那么这样的图像往往有高对比度和多变的灰度色调。直方图均衡化就是一种能仅靠输入图像直方图信息自动达到这种效果的变换函数。它的基本思想是对图像中像素个数多的灰度级进行展宽，而对图像中像素个数少的灰度进行压缩，从而扩展像原取值的动态范围，提高了对比度和灰度色调的变化，使图像更加清晰。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;直方图均衡化的基本思想是把原始图的直方图变换为均匀分布的形式，这样就增加了象素灰度值的动态范围从而可达到增强图像整体对比度的效果。设原始图像在(x，y)处的灰度为f，而改变后的图像为g，则对图像增强的方法可表述为将在(x，y)处的灰度f映射为g。在灰度直方图均衡化处理中对图像的映射函数可定义为:g = EQ (f)，这个映射函数EQ(f)必须满足两个条件(其中L为图像的灰度级数):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;(1)EQ(f)在0≤f≤L-1范围内是一个单值单增函数。这是为了保证增强处理没有打乱原始图像的灰度排列次序，原图各灰度级在变换后仍保持从黑到白(或从白到黑)的排列。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;(2)对于0≤f≤L-1有0≤g≤L-1，这个条件保证了变换前后灰度值动态范围的一致性。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;a href=&quot;http://baike.baidu.com/view/1163767.htm&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; text-decoration: underline; color:#136ec2;&quot;&gt;累积分布函数&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333;&quot;&gt;(cumulative distribution function，CDF)即可以满足上述两个条件，并且通过该函数可以完成将原图像f的分布转换成g的均匀分布。此时的直方图均衡化映射函数为:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;G&lt;/span&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff; vertical-align:sub;&quot;&gt;x&lt;/span&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333;&quot;&gt;= EQ( ) = (ni/n) = pf(f&lt;/span&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; vertical-align:sub;&quot;&gt;i&lt;/span&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333;&quot;&gt;) ，&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;(k=0，1，2，……，L-1)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;上述求和区间为0到k，根据该方程可以由&lt;/span&gt;&lt;a href=&quot;http://baike.baidu.com/view/640222.htm&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; text-decoration: underline; color:#136ec2;&quot;&gt;源图像&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333;&quot;&gt;的各像素灰度值直接得到直方图均衡化后各像素的灰度值。在实际处理变换时，一般先对原始图像的灰度情况进行统计分析，并计算出原始直方图分布，然后根据计算出的累计直方图分布求出f&lt;/span&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; vertical-align:sub;&quot;&gt;k&lt;/span&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333;&quot;&gt;到g&lt;/span&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333; vertical-align:sub;&quot;&gt;k&lt;/span&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333;&quot;&gt;的灰度映射关系。在重复上述步骤得到&lt;/span&gt;&lt;a href=&quot;http://baike.baidu.com/view/640222.htm&quot;&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; text-decoration: underline; color:#136ec2;&quot;&gt;源图像&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'arial,宋体,sans-serif'; font-size:14px; color:#333333;&quot;&gt;所有灰度级到目标图像灰度级的映射关系后，按照这个映射关系对源图像各点像素进行灰度转换，即可完成对源图的直方图均衡化。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'arial,tahoma,Microsoft Yahei,宋体,sans-serif'; font-size:34px; color:#333333; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'arial,tahoma,Microsoft Yahei,宋体,sans-serif'; font-size:34px; color:#333333; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-family:'arial,tahoma,Microsoft Yahei,宋体,sans-serif'; font-size:34px; color:#333333; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QTextBrowser" name="textBrowser_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>871</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QTextBrowser" name="textBrowser_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>871</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;滤镜&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; color:#ff5500;&quot;&gt;概述&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,Courier,mono,serif'; font-size:12px; color:#000000; background-color:#ffffff;&quot;&gt;计算机中彩色图像是由许多像素组成的，改变像素的值就会引起图像的改变，从而产生视觉上不同的效果。以下这几种滤镜都是根据相应的原理改变像素值来达到目的，其中要注意的是修该后的像素值应是0~255之间的整数&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,Courier,mono,serif'; font-size:28pt; color:#00aa00;&quot;&gt;波纹化&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,Courier,mono,serif'; font-size:16pt; color:#000000;&quot;&gt;波浪效果是将图像中的像素产生移位，从而创建出起伏跌荡的图像效果。波浪效果的实现可以理解为某一个像素在它自身一定范围内进行有规律的振动起伏，振动幅度由用户指定，可利用三角函数实现。仍然设原图像上的点坐标用(x’,y’)表示，波浪效果图上的点坐标用(x,y)表示，degree表示振动幅度，取值范围为[1,32]，那么该效果满足的关系如下&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160427185628.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Courier New,Courier,mono,serif'; font-size:28pt; color:#00aaff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,Courier,mono,serif'; font-size:28pt; color:#00aaff;&quot;&gt;浮雕&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,Courier,mono,serif'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;浮雕滤镜为像素点（i,j）的3*3邻域的像素，修改每一点每一个通道上的像素值位P(i,j)= P(i+1,j+1)- P(i-1,j-1)+128。由于图片相邻点的像素值叫接近，因此浮雕处理后，只有在图像边缘区域的效果比较明显，而平滑区域的像素值都近视128。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,Courier,mono,serif'; font-size:16pt; color:#ff0000; background-color:#ffffff;&quot;&gt;具体实现如下（基于OPENCV）：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#808000;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; color:#808000;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;y&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000080;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;y&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;src&lt;span style=&quot; color:#000000;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot; color:#800000;&quot;&gt;rows&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000080;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;y++)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#800080;&quot;&gt;uchar&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;*p0&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;src&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;.ptr&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#800080;&quot;&gt;uchar&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;&amp;gt;(y);&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#008000;&quot;&gt;//指向第y行首元素指针&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#800080;&quot;&gt;uchar&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;*p1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;src&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;.ptr&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#800080;&quot;&gt;uchar&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;&amp;gt;(y&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;);&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#008000;&quot;&gt;//指向第y+1行首元素指针&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#800080;&quot;&gt;uchar&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;*result&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#800000;&quot;&gt;dst&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;.ptr&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#800080;&quot;&gt;uchar&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;&amp;gt;(y);&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#808000;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#808000;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;x&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;x&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;src&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#800000;&quot;&gt;cols&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;x++)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#808000;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#808000;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;c&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;c&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;c++)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;                &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;result[&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;x&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;c]&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#800080;&quot;&gt;cv&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;::saturate_cast&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#808000;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;&amp;gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;p1[&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;(x&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;c]&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;p0[&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;(x&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;c]&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000080;&quot;&gt;128&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;);&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#000000;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:28pt; color:#55aaff;&quot;&gt;挤压处理&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:14pt; color:#000000;&quot;&gt;挤压效果是将图像向内挤压，产生收缩变形。挤压效果的实现可以看成是数学极坐标的一种体现，将当前像素点、图像正中心点和过中心点的水平线这三要素画出一个极坐标，然后根据用户指定的挤压度，在当前点与中心点所连的直线上映射出一个像素点，最后将这个像素点作为目标点输出。设原图像上的点坐标用(x’,y’)表示，挤压效果图上的点坐标用(x,y)表示，图像正中心点坐标为(midx,midy)，ρ和θ表示点(x,y)所在极坐标系对应的极值和极角，degree为挤压度，取值为[1,32]，那么挤压效果满足的关系如下式所示&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160427185103.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:28pt; color:#55557f;&quot;&gt;扩张处理&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;球面效果是将图像中部隆起成球形，使对象具有立体凸起效果，就像哈哈镜中的图像一样。其实现类同于挤压效果，也可以看成是极坐标的一种体现。设坐标表示和挤压效果一致，那么球面效果满足的关系如下&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160427185345.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:28pt; color:#0055ff;&quot;&gt;颜色转换&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;颜色转换使用了OPENCV3.0自带的&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#008000;&quot;&gt;applycolormap&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;函数，声明如下：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:16px; font-weight:600; color:#000000; background-color:#ffffff;&quot;&gt;  C++:&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-weight:600; color:#003048; background-color:#ffffff;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;void &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-weight:600; color:#003048; background-color:#ffffff;&quot;&gt;applyColorMap&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:large; color:#000000; background-color:#ffffff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;InputArray &lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:16px; font-weight:600; color:#000000; background-color:#ffffff;&quot;&gt;src&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;, OutputArray &lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:16px; font-weight:600; color:#000000; background-color:#ffffff;&quot;&gt;dst&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;, int &lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:16px; font-weight:600; color:#000000; background-color:#ffffff;&quot;&gt;colormap&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:large; color:#000000; background-color:#ffffff;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;其中，color值对应颜色如下&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'sans-serif'; font-size:16pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'sans-serif'; font-size:16pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160427190044.png&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QTextBrowser" name="textBrowser_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>871</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;面部识别与追踪&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'微软雅黑,宋体,Arial'; font-size:15px; color:#ff0000; background-color:#ffffff;&quot;&gt;OpenCV的例程中带有人脸检测的例程，位置在：OpenCV\samples\facedetect.cpp文件。我们这里采用的就是opencv的例程并做了一些修改。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'微软雅黑,宋体,Arial'; font-size:15px; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'微软雅黑,宋体,Arial'; font-size:x-large; font-weight:600; color:#000000; background-color:#ffffff;&quot;&gt;人脸检测基础知识整理&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'微软雅黑,宋体,Arial'; font-size:x-large; font-weight:600; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'微软雅黑,宋体,Arial'; font-size:15px; color:#000000; background-color:#ffffff;&quot;&gt;人脸识别从整体来看分为两个部分：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'微软雅黑,宋体,Arial'; font-size:15px; color:#000000; background-color:#ffffff;&quot;&gt;1、Face detection 人脸识别，即识别出这是人的脸，而不管他是谁的。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'微软雅黑,宋体,Arial'; font-size:15px; color:#000000; background-color:#ffffff;&quot;&gt;2、Face preprocessing 面部预处理，即提取出脸部图像。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'微软雅黑,宋体,Arial'; font-size:15px; color:#000000; background-color:#ffffff;&quot;&gt;“基于知识的方法主要利用先验知识将人脸看作器官特征的组合，根据眼睛、眉毛、嘴巴、鼻子等器官的特征以及相互之间的几何位置关系来检测人脸。基于统计的方法则将人脸看作一个整体的模式——二维像素矩阵，从统计的观点通过大量人脸图像样本构造人脸模式空间，根据相似度量来判断人脸是否存在。在这两种框架之下，发展了许多方法。目前随着各种方法的不断提出和应用条件的变化，将知识模型与统计模型相结合的综合系统将成为未来的研究趋势。”（来自论文《基于Adaboost的人脸检测方法及眼睛定位算法研究》）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;主流的&lt;/span&gt;&lt;a href=&quot;http://www.anfangnet.com/renlianshibie/&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; text-decoration: underline; color:#348c86; background-color:#ffffff;&quot;&gt;人脸识别&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;技术基本上可以归结为三类，即&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;1. 基于几何特征的方法是最早、最传统的方法，通常需要和其他算法结合才能有比较好的效果；&lt;br /&gt;2. &lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;基于模板的方法可以分为基于相关匹配的方法、特征脸方法、线性判别分析方法、奇异值分解方法、神经网络方法、动态连接匹配方法等。&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;&lt;br /&gt;3. &lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;基于模型的方法则有基于隐马尔柯夫模型，主动形状模型和主动外观模型的方法等。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#5555ff; background-color:#ffffff;&quot;&gt;下面是opencv具体实现代码&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-size:18pt; color:#5555ff; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;img src=&quot;:/images/QQ截图20160427193321.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; font-size:18pt; color:#5555ff; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:26px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="menu.qrc"/>
+ </resources>
+ <connections/>
+</ui>

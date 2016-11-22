@@ -1,0 +1,270 @@
+<RCC>
+    <qresource prefix="/icoFile">
+        <file>images/1 (3).png</file>
+        <file>images/1 (4).png</file>
+        <file>images/1 (5).png</file>
+        <file>images/1 (6).png</file>
+        <file>images/1 (7).png</file>
+        <file>images/1 (8).png</file>
+        <file>images/1 (9).png</file>
+        <file>images/1 (11).png</file>
+        <file>images/1 (14).png</file>
+        <file>images/1 (18).png</file>
+        <file>images/1 (19).png</file>
+        <file>images/1 (24).png</file>
+        <file>images/1 (27).png</file>
+        <file>images/1 (28).png</file>
+        <file>images/1 (29).png</file>
+        <file>images/1 (30).png</file>
+        <file>images/1 (31).png</file>
+        <file>images/1 (32).png</file>
+        <file>images/1 (33).png</file>
+        <file>images/1 (34).png</file>
+        <file>images/1 (35).png</file>
+        <file>images/1 (36).png</file>
+        <file>images/1 (37).png</file>
+        <file>images/1 (38).png</file>
+        <file>images/1 (39).png</file>
+        <file>images/1 (40).png</file>
+        <file>images/1 (41).png</file>
+        <file>images/1 (42).png</file>
+        <file>images/1 (43).png</file>
+        <file>images/1 (44).png</file>
+        <file>images/1 (45).png</file>
+        <file>images/1 (46).png</file>
+        <file>images/1 (47).png</file>
+        <file>images/1 (48).png</file>
+        <file>images/1 (56).png</file>
+        <file>images/1(57).png</file>
+        <file>images/1(58).jpg</file>
+        <file>images/1(59).jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>images/60.jpg</file>
+        <file>images/61.jpg</file>
+        <file>images/62.jpg</file>
+        <file>images/63.jpg</file>
+        <file>images/65.jpg</file>
+        <file>images/66.jpg</file>
+        <file>images/76.jpg</file>
+        <file>images/93.png</file>
+        <file>images/93 (1).png</file>
+        <file>images/100.png</file>
+        <file>images/83.png</file>
+        <file>images/101.png</file>
+        <file>images/103 (1).jpg</file>
+        <file>images/104.jpg</file>
+        <file>images/106.jpg</file>
+        <file>images/107.jpg</file>
+        <file>images/108.png</file>
+        <file>images/109 (1).jpg</file>
+        <file>images/109.jpg</file>
+        <file>images/113.jpg</file>
+        <file>images/116.png</file>
+        <file>images/117.jpeg</file>
+        <file>images/118.jpg</file>
+        <file>images/1(59).jpg</file>
+        <file>images/110.jpg</file>
+        <file>images/120.jpg</file>
+        <file>images/120 (1).png</file>
+        <file>images/140.jpg</file>
+        <file>images/160 (1).jpg</file>
+        <file>images/170.jpg</file>
+        <file>images/190.jpg</file>
+        <file>images/200.jpg</file>
+        <file>images/210.png</file>
+        <file>images/fang.png</file>
+        <file>images/gao.png</file>
+        <file>images/jun.png</file>
+        <file>images/zhong.png</file>
+        <file>images/cai.png</file>
+        <file>images/dan.png</file>
+        <file>images/zhijun.png</file>
+        <file>images/fushi.png</file>
+        <file>images/膨胀.png</file>
+        <file>images/zao12.png</file>
+        <file>images/bo.png</file>
+        <file>images/bian2.png</file>
+        <file>images/jian.png</file>
+        <file>images/liang.png</file>
+        <file>images/xuan.png</file>
+        <file>images/bk.png</file>
+        <file>images/shuang.png</file>
+        <file>images/帮助 (1).png</file>
+        <file>images/帮助.png</file>
+        <file>images/齿轮 (1).png</file>
+        <file>images/齿轮.png</file>
+        <file>images/打开文件 (1).png</file>
+        <file>images/打开文件 (2).png</file>
+        <file>images/齿轮 (2).png</file>
+        <file>images/齿轮 (3).png</file>
+        <file>images/帮助 (3).png</file>
+        <file>images/帮助 (2).png</file>
+        <file>images/帮助8.png</file>
+        <file>images/帮助9.png</file>
+        <file>images/设置（齿轮） (1).png</file>
+        <file>images/设置（齿轮）.png</file>
+        <file>images/关闭 (1).png</file>
+        <file>images/关闭.png</file>
+        <file>images/最小化.png</file>
+        <file>images/关闭1.png</file>
+        <file>images/最小化 (2).png</file>
+        <file>images/关闭 (2).png</file>
+        <file>images/最小化 (3).png</file>
+        <file>images/最小化 (4).png</file>
+        <file>images/最小化 (5).png</file>
+        <file>images/最小化 (6).png</file>
+        <file>images/fudiao.png</file>
+        <file>images/jiya.png</file>
+        <file>images/kuozhang.png</file>
+        <file>images/zhengxian.png</file>
+        <file>images/yanse.png</file>
+        <file>images/Schar.png</file>
+        <file>images/Sobel.png</file>
+        <file>images/笑脸 (1).png</file>
+        <file>images/笑脸.png</file>
+        <file>images/QQ截图20160425000502.png</file>
+        <file>images/QQ截图20160425134559.png</file>
+        <file>images/QQ截图20160425134621.png</file>
+        <file>images/QQ截图20160425134634.png</file>
+        <file>images/QQ截图20160425134642.png</file>
+        <file>images/QQ截图20160425134709.png</file>
+        <file>images/QQ截图20160425134720.png</file>
+        <file>images/QQ截图20160425134736.png</file>
+        <file>images/QQ截图20160425134748.png</file>
+        <file>images/QQ截图20160425134756.png</file>
+        <file>images/QQ截图20160425141015.png</file>
+        <file>images/QQ截图20160425141100.png</file>
+        <file>images/QQ截图20160425141115.png</file>
+        <file>images/QQ截图20160425141128.png</file>
+        <file>images/QQ截图20160425141151.png</file>
+        <file>images/QQ截图20160425141157.png</file>
+        <file>images/QQ截图20160425141205.png</file>
+        <file>images/QQ截图20160425141215.png</file>
+        <file>help1.html</file>
+        <file>images/QQ截图20160425223919.png</file>
+        <file>images/QQ截图20160425223934.png</file>
+        <file>images/QQ截图20160425230752.png</file>
+        <file>images/QQ截图20160425230812.png</file>
+        <file>images/QQ截图20160425230850.png</file>
+        <file>images/QQ截图20160425230922.png</file>
+        <file>images/QQ截图20160425232154.png</file>
+        <file>images/pss.ico</file>
+        <file>images/ps.ico</file>
+        <file>images/pss (1).ico</file>
+        <file>images/QQ截图20160426232634.png</file>
+        <file>images/QQ截图20160426232719.png</file>
+        <file>images/QQ截图20160426232750.png</file>
+        <file>images/QQ截图20160426232904.png</file>
+        <file>images/QQ截图20160426233311.png</file>
+        <file>images/QQ截图20160426233637.png</file>
+        <file>images/QQ截图20160426233834.png</file>
+        <file>images/w.png</file>
+        <file>images/w1.png</file>
+        <file>images/1 (2).png</file>
+        <file>images/0.png</file>
+        <file>images/3.png</file>
+        <file>images/4.png</file>
+        <file>images/8.png</file>
+        <file>images/20.png</file>
+        <file>images/QQ截图20160427000333.png</file>
+        <file>images/QQ截图20160427000339.png</file>
+        <file>images/QQ截图20160427000346.png</file>
+        <file>images/QQ截图20160427001003.png</file>
+        <file>images/QQ截图20160427001544.png</file>
+        <file>images/QQ截图20160427001833.png</file>
+        <file>images/QQ截图20160427185118.png</file>
+        <file>images/QQ截图20160427185103.png</file>
+        <file>images/QQ截图20160427185345.png</file>
+        <file>images/QQ截图20160427185628.png</file>
+        <file>images/QQ截图20160427190044.png</file>
+        <file>images/QQ截图20160427192646.png</file>
+        <file>images/QQ截图20160427193321.png</file>
+        <file>help4.html</file>
+        <file>images/QQ截图20160429124948.png</file>
+        <file>images/QQ截图20160429125216.png</file>
+        <file>images/QQ截图20160429125351.png</file>
+        <file>images/QQ截图20160429125412.png</file>
+        <file>images/启动界面.png</file>
+        <file>images/QQ截图20160429175349.png</file>
+        <file>images/QQ截图20160429180021.png</file>
+        <file>images/帮助 (4).png</file>
+        <file>images/帮助 (5).png</file>
+        <file>images/QQ截图20160429180928.png</file>
+        <file>images/启动界面(1).png</file>
+        <file>images/5521.png</file>
+        <file>images/555.ico</file>
+        <file>images/圆形.png</file>
+        <file>images/圆形 (1).png</file>
+        <file>images/圆形 (2).png</file>
+        <file>images/圆形 (3).png</file>
+        <file>images/箭头 (1).png</file>
+        <file>images/箭头 (2).png</file>
+        <file>images/箭头 (3).png</file>
+        <file>images/箭头.png</file>
+        <file>images/箭头 (4).png</file>
+        <file>images/箭头 (5).png</file>
+        <file>images/箭头 (6).png</file>
+        <file>images/箭头 (7).png</file>
+        <file>images/图标1.png</file>
+        <file>images/92fd208bfc5f7041-6d14e10d0a32cc49-8e31f7fae4c1c1f1768e0da67aa56534.jpg</file>
+        <file>images/例子.png</file>
+        <file>images/1 (4).png</file>
+        <file>images/QQ截图20160511235426.png</file>
+        <file>images/QQ截图20160512000432.png</file>
+        <file>images/QQ截图20160512000850.png</file>
+        <file>images/最大化 (1).png</file>
+        <file>images/最大化.png</file>
+        <file>images/16223924-c614620f8b0149d0a4c536d9718351cf.jpg</file>
+        <file>images/Fig0217(a).tif</file>
+        <file>images/0110c4476cdf5946-78d65c2a03cce2bf-35987e0235f79331b6a5da2bf6075001.jpg</file>
+        <file>images/0110c4476cdf5946-78d65c2a03cce2bf-35987e0235f79331b6a5da2bf6075001 (1).jpg</file>
+        <file>images/0110c4476cdf5946-78d65c2a03cce2bf-35987e0235f79331b6a5da2bf6075001 (2).jpg</file>
+        <file>images/eb863d8244063a46-879cdc9bed8672bf-6f2f3e549eedd2b7914509d9fb23e95f.jpg</file>
+        <file>images/图片替换.png</file>
+        <file>images/保存.png</file>
+        <file>images/保存 (1).png</file>
+        <file>images/保存 (2).png</file>
+        <file>images/保存 (3).png</file>
+        <file>images/2.jpg</file>
+        <file>images/21860139_1370763185270.jpg</file>
+        <file>images/圆形 (4).png</file>
+        <file>images/圆形 (5).png</file>
+        <file>images/向右.png</file>
+        <file>images/向右 (3).png</file>
+        <file>images/向右 (2).png</file>
+        <file>images/向右 (1).png</file>
+        <file>images/添加加 (2).png</file>
+        <file>images/添加加 (1).png</file>
+        <file>images/添加加.png</file>
+        <file>images/加 (5).png</file>
+        <file>images/加 (4).png</file>
+        <file>images/加 (3).png</file>
+        <file>images/加 (2).png</file>
+        <file>images/加 (1).png</file>
+        <file>images/加.png</file>
+        <file>images/减 (4).png</file>
+        <file>images/减 (3).png</file>
+        <file>images/减 (2).png</file>
+        <file>images/减 (7).png</file>
+        <file>images/减 (6).png</file>
+        <file>images/加 (6).png</file>
+        <file>images/减 (8).png</file>
+        <file>images/减 (9).png</file>
+        <file>images/manshui.png</file>
+        <file>images/yuzhichuli.png</file>
+        <file>images/dingheimao.png</file>
+        <file>images/kaiyunsuan.png</file>
+        <file>images/tupiandiejia.png</file>
+        <file>images/add_archive_folder_orange_to_128px_314_easyicon.net.png</file>
+        <file>images/add96.ico</file>
+        <file>images/add.png</file>
+        <file>images/add128.png</file>
+        <file>images/添加.png</file>
+        <file>../build-TextEditor-Desktop_Qt_5_6_0_MSVC2015_64bit-Debug/debug/haarcascade_eye_tree_eyeglasses.xml</file>
+        <file>../build-TextEditor-Desktop_Qt_5_6_0_MSVC2015_64bit-Debug/debug/haarcascade_frontalface_alt.xml</file>
+        <file>images/exm3.jpg</file>
+        <file>images/exm1.jpg</file>
+        <file>images/exm2.jpg</file>
+    </qresource>
+</RCC>

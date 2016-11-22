@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/icoFile">
+        <file>images/１ (1).png</file>
+        <file>images/１ (2).png</file>
+        <file>images/１ (3).png</file>
+        <file>images/１ (4).png</file>
+        <file>images/１ (5).png</file>
+        <file>images/１ (6).png</file>
+        <file>images/１ (7).png</file>
+        <file>images/１ (8).png</file>
+        <file>images/１ (9).png</file>
+        <file>images/１ (10).png</file>
+        <file>images/１ (11).png</file>
+        <file>images/１ (12).png</file>
+        <file>images/１ (13).png</file>
+        <file>images/１ (14).png</file>
+        <file>images/１ (15).png</file>
+        <file>images/１ (16).png</file>
+        <file>images/１ (17).png</file>
+        <file>images/１ (18).png</file>
+        <file>images/１ (19).png</file>
+        <file>images/１ (20).png</file>
+        <file>images/１ (21).png</file>
+        <file>images/１ (22).png</file>
+        <file>images/１ (23).png</file>
+        <file>images/１ (24).png</file>
+        <file>images/１ (25).png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39E10FC0-561B-3A14-B610-71F820689261}</ProjectGuid>
+    <RootNamespace>TextEditor</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>TextEditor</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>TextEditor</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">TextEditor</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">TextEditor</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;E:\opencv\opencv3.0\build\include;E:\opencv\opencv3.0\build\include\opencv;E:\opencv\opencv3.0\build\include\opencv2;$(QTDIR)\include;$(QTDIR)\include\QtMultimediaWidgets;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtCore;release;.;$(QTDIR)\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_MULTIMEDIAWIDGETS_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmain.lib;shell32.lib;E:\opencv\opencv3.0\build\x64\vc12\lib\opencv_ts300.lib;E:\opencv\opencv3.0\build\x64\vc12\lib\opencv_world300.lib;E:\opencv\opencv3.0\build\x64\vc12\staticlib\opencv_core300.lib;E:\opencv\opencv3.0\build\x64\vc12\staticlib\opencv_highgui300.lib;E:\opencv\opencv3.0\build\x64\vc12\staticlib\opencv_imgproc300.lib;E:\opencv\opencv3.0\build\x86\vc12\lib\opencv_ts300.lib;E:\opencv\opencv3.0\build\x86\vc12\lib\opencv_world300.lib;E:\opencv\opencv3.0\build\x86\vc12\staticlib\opencv_core300.lib;E:\opencv\opencv3.0\build\x86\vc12\staticlib\opencv_highgui300.lib;E:\opencv\opencv3.0\build\x86\vc12\staticlib\opencv_imgproc300.lib;$(QTDIR)\lib\Qt5MultimediaWidgets.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Multimedia.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Network.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\utils\postgresql\pgsql\lib;C:\utils\my_sql\my_sql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\TextEditor.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_MULTIMEDIAWIDGETS_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;E:\opencv\opencv3.0\build\include;E:\opencv\opencv3.0\build\include\opencv;E:\opencv\opencv3.0\build\include\opencv2;$(QTDIR)\include;$(QTDIR)\include\QtMultimediaWidgets;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtCore;debug;.;$(QTDIR)\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_MULTIMEDIAWIDGETS_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;shell32.lib;E:\opencv\opencv3.0\build\x64\vc12\lib\opencv_ts300d.lib;E:\opencv\opencv3.0\build\x64\vc12\lib\opencv_world300d.lib;E:\opencv\opencv3.0\build\x64\vc12\staticlib\opencv_core300d.lib;E:\opencv\opencv3.0\build\x64\vc12\staticlib\opencv_highgui300d.lib;E:\opencv\opencv3.0\build\x64\vc12\staticlib\opencv_imgproc300d.lib;E:\opencv\opencv3.0\build\x86\vc12\lib\opencv_ts300d.lib;E:\opencv\opencv3.0\build\x86\vc12\lib\opencv_world300d.lib;E:\opencv\opencv3.0\build\x86\vc12\staticlib\opencv_core300d.lib;E:\opencv\opencv3.0\build\x86\vc12\staticlib\opencv_highgui300d.lib;E:\opencv\opencv3.0\build\x86\vc12\staticlib\opencv_imgproc300d.lib;$(QTDIR)\lib\Qt5MultimediaWidgetsd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Multimediad.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Networkd.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\utils\postgresql\pgsql\lib;C:\utils\my_sql\my_sql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\TextEditor.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_MULTIMEDIAWIDGETS_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="mainwindow1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IE:/Qt5.6_32/5.6/msvc2015/mkspecs/win32-msvc2015 -IC:/Users/12745/Documents/TextEditor -IE:/opencv/opencv3.0/build/include -IE:/opencv/opencv3.0/build/include/opencv -IE:/opencv/opencv3.0/build/include/opencv2 -IE:/Qt5.6_32/5.6/msvc2015/include -IE:/Qt5.6_32/5.6/msvc2015/include/QtMultimediaWidgets -IE:/Qt5.6_32/5.6/msvc2015/include/QtWidgets -IE:/Qt5.6_32/5.6/msvc2015/include/QtMultimedia -IE:/Qt5.6_32/5.6/msvc2015/include/QtGui -IE:/Qt5.6_32/5.6/msvc2015/include/QtANGLE -IE:/Qt5.6_32/5.6/msvc2015/include/QtNetwork -IE:/Qt5.6_32/5.6/msvc2015/include/QtCore mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_MULTIMEDIAWIDGETS_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IE:/Qt5.6_32/5.6/msvc2015/mkspecs/win32-msvc2015 -IC:/Users/12745/Documents/TextEditor -IE:/opencv/opencv3.0/build/include -IE:/opencv/opencv3.0/build/include/opencv -IE:/opencv/opencv3.0/build/include/opencv2 -IE:/Qt5.6_32/5.6/msvc2015/include -IE:/Qt5.6_32/5.6/msvc2015/include/QtMultimediaWidgets -IE:/Qt5.6_32/5.6/msvc2015/include/QtWidgets -IE:/Qt5.6_32/5.6/msvc2015/include/QtMultimedia -IE:/Qt5.6_32/5.6/msvc2015/include/QtGui -IE:/Qt5.6_32/5.6/msvc2015/include/QtANGLE -IE:/Qt5.6_32/5.6/msvc2015/include/QtNetwork -IE:/Qt5.6_32/5.6/msvc2015/include/QtCore mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow1.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwindow1.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IE:/Qt5.6_32/5.6/msvc2015/mkspecs/win32-msvc2015 -IC:/Users/12745/Documents/TextEditor -IE:/opencv/opencv3.0/build/include -IE:/opencv/opencv3.0/build/include/opencv -IE:/opencv/opencv3.0/build/include/opencv2 -IE:/Qt5.6_32/5.6/msvc2015/include -IE:/Qt5.6_32/5.6/msvc2015/include/QtMultimediaWidgets -IE:/Qt5.6_32/5.6/msvc2015/include/QtWidgets -IE:/Qt5.6_32/5.6/msvc2015/include/QtMultimedia -IE:/Qt5.6_32/5.6/msvc2015/include/QtGui -IE:/Qt5.6_32/5.6/msvc2015/include/QtANGLE -IE:/Qt5.6_32/5.6/msvc2015/include/QtNetwork -IE:/Qt5.6_32/5.6/msvc2015/include/QtCore mainwindow1.h -o release\moc_mainwindow1.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC mainwindow1.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_mainwindow1.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwindow1.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_MULTIMEDIAWIDGETS_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IE:/Qt5.6_32/5.6/msvc2015/mkspecs/win32-msvc2015 -IC:/Users/12745/Documents/TextEditor -IE:/opencv/opencv3.0/build/include -IE:/opencv/opencv3.0/build/include/opencv -IE:/opencv/opencv3.0/build/include/opencv2 -IE:/Qt5.6_32/5.6/msvc2015/include -IE:/Qt5.6_32/5.6/msvc2015/include/QtMultimediaWidgets -IE:/Qt5.6_32/5.6/msvc2015/include/QtWidgets -IE:/Qt5.6_32/5.6/msvc2015/include/QtMultimedia -IE:/Qt5.6_32/5.6/msvc2015/include/QtGui -IE:/Qt5.6_32/5.6/msvc2015/include/QtANGLE -IE:/Qt5.6_32/5.6/msvc2015/include/QtNetwork -IE:/Qt5.6_32/5.6/msvc2015/include/QtCore mainwindow1.h -o debug\moc_mainwindow1.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC mainwindow1.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_mainwindow1.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow1.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow1.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_menu.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_menu.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_mainwindow.h" />
+    <ClInclude Include="ui_mainwindow1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">$(QTDIR)\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">$(QTDIR)\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow1.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwindow1.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">$(QTDIR)\bin\uic.exe mainwindow1.ui -o ui_mainwindow1.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC mainwindow1.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_mainwindow1.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwindow1.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">$(QTDIR)\bin\uic.exe mainwindow1.ui -o ui_mainwindow1.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC mainwindow1.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_mainwindow1.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="(1).ico" />
+    <None Include="(1).jpg" />
+    <None Include="(1).png" />
+    <None Include="(11).png" />
+    <None Include="(14).png" />
+    <None Include="(18).png" />
+    <None Include="(19).png" />
+    <None Include="(2).png" />
+    <None Include="(24).png" />
+    <None Include="(27).png" />
+    <None Include="(28).png" />
+    <None Include="(29).png" />
+    <None Include="(3).png" />
+    <None Include="(30).png" />
+    <None Include="(31).png" />
+    <None Include="(32).png" />
+    <None Include="(33).png" />
+    <None Include="(34).png" />
+    <None Include="(35).png" />
+    <None Include="(36).png" />
+    <None Include="(37).png" />
+    <None Include="(38).png" />
+    <None Include="(39).png" />
+    <None Include="(4).png" />
+    <None Include="(40).png" />
+    <None Include="(41).png" />
+    <None Include="(42).png" />
+    <None Include="(43).png" />
+    <None Include="(44).png" />
+    <None Include="(45).png" />
+    <None Include="(46).png" />
+    <None Include="(47).png" />
+    <None Include="(48).png" />
+    <None Include="(5).png" />
+    <None Include="(56).png" />
+    <None Include="(6).png" />
+    <None Include="(7).png" />
+    <None Include="(8).png" />
+    <None Include="(9).png" />
+    <None Include="images\0.png" />
+    <None Include="images\1(57).png" />
+    <None Include="images\1(58).jpg" />
+    <None Include="images\1(59).jpg" />
+    <None Include="images\100.png" />
+    <None Include="images\101.png" />
+    <None Include="images\103" />
+    <None Include="images\104.jpg" />
+    <None Include="images\106.jpg" />
+    <None Include="images\107.jpg" />
+    <None Include="images\108.png" />
+    <None Include="images\109.jpg" />
+    <None Include="images\109" />
+    <None Include="images\110.jpg" />
+    <None Include="images\113.jpg" />
+    <None Include="images\116.png" />
+    <None Include="images\117.jpeg" />
+    <None Include="images\118.jpg" />
+    <None Include="images\120.jpg" />
+    <None Include="images\120" />
+    <None Include="images\140.jpg" />
+    <None Include="images\160" />
+    <None Include="images\170.jpg" />
+    <None Include="images\190.jpg" />
+    <None Include="images\1" />
+    <None Include="images\20.png" />
+    <None Include="images\200.jpg" />
+    <None Include="images\210.png" />
+    <None Include="images\3.png" />
+    <None Include="images\4.png" />
+    <None Include="images\5521.png" />
+    <None Include="images\555.ico" />
+    <None Include="images\60.jpg" />
+    <None Include="images\61.jpg" />
+    <None Include="images\62.jpg" />
+    <None Include="images\63.jpg" />
+    <None Include="images\65.jpg" />
+    <None Include="images\66.jpg" />
+    <None Include="images\76.jpg" />
+    <None Include="images\8.png" />
+    <None Include="images\83.png" />
+    <None Include="images\92fd208bfc5f7041-6d14e10d0a32cc49-8e31f7fae4c1c1f1768e0da67aa56534.jpg" />
+    <None Include="images\93.png" />
+    <None Include="images\93" />
+    <None Include="images\??.png" />
+    <None Include="images\??1.png" />
+    <None Include="images\??8.png" />
+    <None Include="images\??9.png" />
+    <None Include="images\???.png" />
+    <None Include="images\????(1).png" />
+    <None Include="images\????.png" />
+    <None Include="images\??????.png" />
+    <None Include="images\??????" />
+    <None Include="images\????" />
+    <None Include="images\???" />
+    <None Include="images\??" />
+    <None Include="images\QQ??20160425000502.png" />
+    <None Include="images\QQ??20160425134559.png" />
+    <None Include="images\QQ??20160425134621.png" />
+    <None Include="images\QQ??20160425134634.png" />
+    <None Include="images\QQ??20160425134642.png" />
+    <None Include="images\QQ??20160425134709.png" />
+    <None Include="images\QQ??20160425134720.png" />
+    <None Include="images\QQ??20160425134736.png" />
+    <None Include="images\QQ??20160425134748.png" />
+    <None Include="images\QQ??20160425134756.png" />
+    <None Include="images\QQ??20160425141015.png" />
+    <None Include="images\QQ??20160425141100.png" />
+    <None Include="images\QQ??20160425141115.png" />
+    <None Include="images\QQ??20160425141128.png" />
+    <None Include="images\QQ??20160425141151.png" />
+    <None Include="images\QQ??20160425141157.png" />
+    <None Include="images\QQ??20160425141205.png" />
+    <None Include="images\QQ??20160425141215.png" />
+    <None Include="images\QQ??20160425223919.png" />
+    <None Include="images\QQ??20160425223934.png" />
+    <None Include="images\QQ??20160425230752.png" />
+    <None Include="images\QQ??20160425230812.png" />
+    <None Include="images\QQ??20160425230850.png" />
+    <None Include="images\QQ??20160425230922.png" />
+    <None Include="images\QQ??20160425232154.png" />
+    <None Include="images\QQ??20160426232634.png" />
+    <None Include="images\QQ??20160426232719.png" />
+    <None Include="images\QQ??20160426232750.png" />
+    <None Include="images\QQ??20160426232904.png" />
+    <None Include="images\QQ??20160426233311.png" />
+    <None Include="images\QQ??20160426233637.png" />
+    <None Include="images\QQ??20160426233834.png" />
+    <None Include="images\QQ??20160427000333.png" />
+    <None Include="images\QQ??20160427000339.png" />
+    <None Include="images\QQ??20160427000346.png" />
+    <None Include="images\QQ??20160427001003.png" />
+    <None Include="images\QQ??20160427001544.png" />
+    <None Include="images\QQ??20160427001833.png" />
+    <None Include="images\QQ??20160427185103.png" />
+    <None Include="images\QQ??20160427185118.png" />
+    <None Include="images\QQ??20160427185345.png" />
+    <None Include="images\QQ??20160427185628.png" />
+    <None Include="images\QQ??20160427190044.png" />
+    <None Include="images\QQ??20160427192646.png" />
+    <None Include="images\QQ??20160427193321.png" />
+    <None Include="images\QQ??20160429124948.png" />
+    <None Include="images\QQ??20160429125216.png" />
+    <None Include="images\QQ??20160429125351.png" />
+    <None Include="images\QQ??20160429125412.png" />
+    <None Include="images\QQ??20160429175349.png" />
+    <None Include="images\QQ??20160429180021.png" />
+    <None Include="images\QQ??20160429180928.png" />
+    <None Include="images\QQ??20160511235426.png" />
+    <None Include="images\QQ??20160512000432.png" />
+    <None Include="images\QQ??20160512000850.png" />
+    <None Include="images\Schar.png" />
+    <None Include="images\Sobel.png" />
+    <None Include="images\bian2.png" />
+    <None Include="images\bk.png" />
+    <None Include="images\bo.png" />
+    <None Include="images\cai.png" />
+    <None Include="images\dan.png" />
+    <None Include="images\fang.png" />
+    <None Include="images\fudiao.png" />
+    <None Include="images\fushi.png" />
+    <None Include="images\gao.png" />
+    <None Include="help1.html" />
+    <None Include="help4.html" />
+    <None Include="images\jian.png" />
+    <None Include="images\jiya.png" />
+    <None Include="images\jun.png" />
+    <None Include="images\kuozhang.png" />
+    <None Include="images\liang.png" />
+    <CustomBuild Include="menu.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">menu.qrc;help1.html;help4.html;images\QQ??20160427185345.png;images\160 (1).jpg;images\QQ??20160425134634.png;images\93 (1).png;images\??.png;images\107.jpg;images\61.jpg;images\190.jpg;images\QQ??20160426232634.png;images\555.ico;images\QQ??20160425232154.png;images\bo.png;images\QQ??20160425134748.png;images\92fd208bfc5f7041-6d14e10d0a32cc49-8e31f7fae4c1c1f1768e0da67aa56534.jpg;images\QQ??20160425230752.png;images\1(59).jpg;images\QQ??20160429125412.png;images\QQ??20160425230922.png;images\170.jpg;images\??????.png;images\w1.png;images\fudiao.png;images\QQ??20160427193321.png;images\???.png;images\ps.ico;images\83.png;images\?? (7).png;images\liang.png;images\QQ??20160425223919.png;images\0.png;images\QQ??20160425134621.png;images\210.png;images\QQ??20160426232719.png;images\xuan.png;images\120 (1).png;images\?? (5).png;images\?? (2).png;images\jian.png;images\bk.png;images\zhengxian.png;images\QQ??20160427001544.png;images\?? (3).png;images\5521.png;images\116.png;images\??1.png;images\110.jpg;images\??? (6).png;images\1 (4).png;images\gao.png;images\109 (1).jpg;images\QQ??20160427001003.png;images\?? (1).png;images\w.png;images\??? (4).png;images\1 (2).png;images\?? (4).png;images\??9.png;images\??? (2).png;images\QQ??20160429175349.png;images\QQ??20160427192646.png;images\66.jpg;images\QQ??20160425134720.png;images\QQ??20160427001833.png;images\QQ??20160425141215.png;images\101.png;images\jun.png;images\QQ??20160511235426.png;images\????(1).png;images\Sobel.png;images\QQ??20160427000339.png;images\QQ??20160425000502.png;images\200.jpg;images\shuang.png;images\???? (1).png;images\kuozhang.png;images\62.jpg;images\jiya.png;images\QQ??20160429125216.png;images\3.png;images\QQ??20160425141157.png;images\QQ??20160427000346.png;images\QQ??20160425134642.png;images\QQ??20160427185118.png;images\zhijun.png;images\fushi.png;images\106.jpg;images\60.jpg;images\zhong.png;images\QQ??20160425134559.png;images\QQ??20160425141128.png;images\cai.png;images\93.png;images\QQ??20160427185628.png;images\Schar.png;images\QQ??20160425134756.png;images\QQ??20160426233637.png;images\QQ??20160512000850.png;images\pss.ico;images\104.jpg;images\QQ??20160429180928.png;images\113.jpg;images\QQ??20160425134709.png;images\dan.png;images\?? (6).png;images\QQ??20160426233834.png;images\140.jpg;images\QQ??20160425134736.png;images\QQ??20160427000333.png;images\117.jpeg;images\zao12.png;images\108.png;images\fang.png;images\QQ??20160425141115.png;images\103 (1).jpg;images\120.jpg;images\QQ??20160429124948.png;images\QQ??20160426233311.png;images\QQ??20160425141151.png;images\QQ??20160425223934.png;images\QQ??20160427185103.png;images\QQ??20160512000432.png;images\??? (5).png;images\QQ??20160426232904.png;images\bian2.png;images\QQ??20160429125351.png;images\?????? (1).png;images\QQ??20160427190044.png;images\??? (3).png;images\76.jpg;images\QQ??20160426232750.png;images\QQ??20160425230850.png;images\yanse.png;images\8.png;images\20.png;images\??8.png;images\QQ??20160425230812.png;images\QQ??20160425141100.png;images\????.png;images\65.jpg;images\pss (1).ico;images\QQ??20160429180021.png;images\QQ??20160425141205.png;images\100.png;images\???? (2).png;images\109.jpg;images\63.jpg;images\118.jpg;images\QQ??20160425141015.png;images\4.png;images\1 (37).png;images\1 (41).png;images\1 (45).png;images\1 (5).png;images\1 (24).png;images\1 (7).png;images\1 (28).png;images\1 (32).png;images\1 (36).png;images\1 (40).png;images\1 (44).png;images\1 (19).png;images\1 (48).png;images\1 (27).png;images\1 (31).png;images\1 (56).png;images\1(58).jpg;images\1 (35).png;images\1 (14).png;images\1 (39).png;images\1 (43).png;images\1 (18).png;images\1 (3).png;images\1 (47).png;images\1 (9).png;images\1 (30).png;images\1 (34).png;images\1 (11).png;images\1 (38).png;images\1 (42).png;images\1 (46).png;images\1(57).png;images\1 (6).png;images\1 (8).png;images\1 (29).png;images\1 (33).png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">$(QTDIR)\bin\rcc.exe -name menu menu.qrc -o release\qrc_menu.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">RCC menu.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\qrc_menu.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">menu.qrc;help1.html;help4.html;images\QQ??20160427185345.png;images\160 (1).jpg;images\QQ??20160425134634.png;images\93 (1).png;images\??.png;images\107.jpg;images\61.jpg;images\190.jpg;images\QQ??20160426232634.png;images\555.ico;images\QQ??20160425232154.png;images\bo.png;images\QQ??20160425134748.png;images\92fd208bfc5f7041-6d14e10d0a32cc49-8e31f7fae4c1c1f1768e0da67aa56534.jpg;images\QQ??20160425230752.png;images\1(59).jpg;images\QQ??20160429125412.png;images\QQ??20160425230922.png;images\170.jpg;images\??????.png;images\w1.png;images\fudiao.png;images\QQ??20160427193321.png;images\???.png;images\ps.ico;images\83.png;images\?? (7).png;images\liang.png;images\QQ??20160425223919.png;images\0.png;images\QQ??20160425134621.png;images\210.png;images\QQ??20160426232719.png;images\xuan.png;images\120 (1).png;images\?? (5).png;images\?? (2).png;images\jian.png;images\bk.png;images\zhengxian.png;images\QQ??20160427001544.png;images\?? (3).png;images\5521.png;images\116.png;images\??1.png;images\110.jpg;images\??? (6).png;images\1 (4).png;images\gao.png;images\109 (1).jpg;images\QQ??20160427001003.png;images\?? (1).png;images\w.png;images\??? (4).png;images\1 (2).png;images\?? (4).png;images\??9.png;images\??? (2).png;images\QQ??20160429175349.png;images\QQ??20160427192646.png;images\66.jpg;images\QQ??20160425134720.png;images\QQ??20160427001833.png;images\QQ??20160425141215.png;images\101.png;images\jun.png;images\QQ??20160511235426.png;images\????(1).png;images\Sobel.png;images\QQ??20160427000339.png;images\QQ??20160425000502.png;images\200.jpg;images\shuang.png;images\???? (1).png;images\kuozhang.png;images\62.jpg;images\jiya.png;images\QQ??20160429125216.png;images\3.png;images\QQ??20160425141157.png;images\QQ??20160427000346.png;images\QQ??20160425134642.png;images\QQ??20160427185118.png;images\zhijun.png;images\fushi.png;images\106.jpg;images\60.jpg;images\zhong.png;images\QQ??20160425134559.png;images\QQ??20160425141128.png;images\cai.png;images\93.png;images\QQ??20160427185628.png;images\Schar.png;images\QQ??20160425134756.png;images\QQ??20160426233637.png;images\QQ??20160512000850.png;images\pss.ico;images\104.jpg;images\QQ??20160429180928.png;images\113.jpg;images\QQ??20160425134709.png;images\dan.png;images\?? (6).png;images\QQ??20160426233834.png;images\140.jpg;images\QQ??20160425134736.png;images\QQ??20160427000333.png;images\117.jpeg;images\zao12.png;images\108.png;images\fang.png;images\QQ??20160425141115.png;images\103 (1).jpg;images\120.jpg;images\QQ??20160429124948.png;images\QQ??20160426233311.png;images\QQ??20160425141151.png;images\QQ??20160425223934.png;images\QQ??20160427185103.png;images\QQ??20160512000432.png;images\??? (5).png;images\QQ??20160426232904.png;images\bian2.png;images\QQ??20160429125351.png;images\?????? (1).png;images\QQ??20160427190044.png;images\??? (3).png;images\76.jpg;images\QQ??20160426232750.png;images\QQ??20160425230850.png;images\yanse.png;images\8.png;images\20.png;images\??8.png;images\QQ??20160425230812.png;images\QQ??20160425141100.png;images\????.png;images\65.jpg;images\pss (1).ico;images\QQ??20160429180021.png;images\QQ??20160425141205.png;images\100.png;images\???? (2).png;images\109.jpg;images\63.jpg;images\118.jpg;images\QQ??20160425141015.png;images\4.png;images\1 (37).png;images\1 (41).png;images\1 (45).png;images\1 (5).png;images\1 (24).png;images\1 (7).png;images\1 (28).png;images\1 (32).png;images\1 (36).png;images\1 (40).png;images\1 (44).png;images\1 (19).png;images\1 (48).png;images\1 (27).png;images\1 (31).png;images\1 (56).png;images\1(58).jpg;images\1 (35).png;images\1 (14).png;images\1 (39).png;images\1 (43).png;images\1 (18).png;images\1 (3).png;images\1 (47).png;images\1 (9).png;images\1 (30).png;images\1 (34).png;images\1 (11).png;images\1 (38).png;images\1 (42).png;images\1 (46).png;images\1(57).png;images\1 (6).png;images\1 (8).png;images\1 (29).png;images\1 (33).png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">$(QTDIR)\bin\rcc.exe -name menu menu.qrc -o debug\qrc_menu.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">RCC menu.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\qrc_menu.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="images\ps.ico" />
+    <None Include="images\pss.ico" />
+    <None Include="images\pss" />
+    <None Include="images\shuang.png" />
+    <None Include="images\w.png" />
+    <None Include="images\w1.png" />
+    <None Include="images\xuan.png" />
+    <None Include="images\yanse.png" />
+    <None Include="images\zao12.png" />
+    <None Include="images\zhengxian.png" />
+    <None Include="images\zhijun.png" />
+    <None Include="images\zhong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
